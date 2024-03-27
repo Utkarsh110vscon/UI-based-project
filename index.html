@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ranking Website</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- work sans -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <!-- Hedvig Letters Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <div class="nav_bar">
+            <div class="part1">
+                <h1>AniRank</h1>
+            </div>
+    
+            <div class="menu-btn">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                      </svg>
+                    Menu
+                </button>
+            </div>
+    
+            <div class="search-bar">
+                <select class="nav_dropdown">
+                    <option value="All">All</option>
+                </select>
+                <input type="text" class="textarea" placeholder=" Search Your Favourite Animes" maxlength="25">
+            </div>
+    
+            <div class="part4 text-style">
+                <a href=""><p>Movi<span>Rank</span></p></a>
+            </div>
+    
+            <div class="part5 text-style">
+                <a href=""><p>Contact Us</p></a>
+            </div>
+    
+            <div>
+                <select id="Language" class="part6 text-style">
+                    <option value="Lang" disabled selected>Lang</option>
+                    <option value="En">En</option>
+                    <option value="Hin">Hin</option>
+                </select>
+            </div>
+    
+        </div>
+    </header>
+
+    <section class="heroes">
+        <div class="hero-box">
+            <div class="remark">
+                <h2>"This list is just my own opinion you don't have to agree with this,its all about having fun 
+                and knowing all sorts of thing." <sub class="author">~Utkarsh kumar</sub> </h2>
+            </div>
+           
+            <div class="source">
+                <a href="#"><img src="./assets/images/MAL.png" alt="MY-ANIME-LIST" class="src-logo"></a>
+                <a href="#"><img src="./assets/images/Crunchyroll-logo.png" alt="Crunchyroll-logo" class="src-logo"></a>
+                <a href="#"><img src="./assets/images/Webtoon_logo.png" alt="Webtoon-logo" class="src-logo"></a>
+                
+                
+            </div>
+        </div>
+    </section>
+    <main>
+        <div class="wrapper">
+            <div class="Carousel-Container">
+                <div class="Slideshow">
+
+                    <div class="left-btn btun">
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--chevron-left-inline ipc-icon--inline ipc-pager-icon left-btn_svg" 
+                            viewBox="0 0 24 24" fill="currentColor" role="presentation">
+                            <path d="M18.378 23.369c.398-.402.622-.947.622-1.516 0-.568-.224-1.113-.622-1.515l-8.249-8.34 8.25-8.34a2.16 2.16 0 0 0 .548-2.07A2.132 2.132 0 0 0 17.428.073a2.104 2.104 0 0 0-2.048.555l-9.758 9.866A2.153 2.153 0 0 0 5 12.009c0 .568.224 1.114.622 1.515l9.758 9.866c.808.817 2.17.817 2.998-.021z"></path>
+                        </svg>
+                    </div>
+
+                    <div class="right-btn btun">
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--chevron-right-inline ipc-icon--inline ipc-pager-icon right-btn_svg" 
+                            viewBox="0 0 24 24" fill="currentColor" role="presentation">
+                            <path d="M5.622.631A2.153 2.153 0 0 0 5 2.147c0 .568.224 1.113.622 1.515l8.249 8.34-8.25 8.34a2.16 2.16 0 0 0-.548 2.07c.196.74.768 1.317 1.499 1.515a2.104 2.104 0 0 0 2.048-.555l9.758-9.866a2.153 2.153 0 0 0 0-3.03L8.62.61C7.812-.207 6.45-.207 5.622.63z"></path>
+                        </svg>
+                    </div>
+                    
+                    <button class="slide-btn btn1"></button>
+                    <button class="slide-btn btn2"></button>
+                    <button class="slide-btn btn3"></button>
+
+                    <div class="Slideshow-wrapper">
+                        <div class="slide">
+                            <img class="slide-image" src="./assets/images/TheRezeArc.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-image" src="./assets/images/frieren.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-image" src="./assets/images/jjk_s2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="browse_trailer">
+
+                <div class="trailer_image itm_img1">
+                    <img src="./assets/images/frieren_visual.jpg" alt="image" >
+                </div>
+                <div class="trailer_svg itm_svg1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+                    </svg> <span>4:16</span>
+                </div>
+                <div class="trailer_p itm_p1">
+                    <p class="Tile">Frieren: Beyond Journey's End</p>
+                    <p class="Genre">Adventure, Drama, Fantasy</p>
+                </div>
+                
+                <div class="trailer_image itm_img2">
+                    <img src="./assets/images/jjks2_visual.jpg" alt="image">
+                </div>
+                <div class="trailer_svg itm_svg2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+                    </svg> <span>4:16</span>
+                </div>
+                <div class="trailer_p itm_p2">
+                    <p class="Tile">Jujutsu Kaisen 2nd Season</p>
+                    <p class="Genre">Action, Fantasy, Gore, School</p>
+                </div>
+
+                <div class="trailer_image itm_img3">
+                    <img src="./assets/images/chainsaw_rezevisual.jpg" alt="image">
+                </div>
+                <div class="trailer_svg itm_svg3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+                    </svg> <span>4:16</span>
+                </div>
+                <div class="trailer_p itm_p3">
+                    <p class="Tile">Chainsaw Man the Movie: Reze Arc</p>
+                    <p class="Genre">Action, Fantasy, Gore</p>
+                </div>
+
+                <div class="Browse_btn">
+                    <span id="b-button">Browse trailers</span>
+                    <svg id="button-svg" width="24" height="22" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--chevron-right-inline ipc-icon--inline ipc-pager-icon right-btn_svg" viewBox="0 0 24 24" fill="currentColor" role="presentation">
+                        <path d="M5.622.631A2.153 2.153 0 0 0 5 2.147c0 .568.224 1.113.622 1.515l8.249 8.34-8.25 8.34a2.16 2.16 0 0 0-.548 2.07c.196.74.768 1.317 1.499 1.515a2.104 2.104 0 0 0 2.048-.555l9.758-9.866a2.153 2.153 0 0 0 0-3.03L8.62.61C7.812-.207 6.45-.207 5.622.63z"></path>
+                    </svg>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="Main-Article">
+            <div class="top-anime">
+                <h3 class="mainArticle-Heading">Top picks</h3>
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--chevron-right-inline ipc-icon--inline ipc-title-link ipc-title-link-chevron"
+                    viewBox="0 0 24 24" fill="currentColor" role="presentation">
+                    <path d="M5.622.631A2.153 2.153 0 0 0 5 2.147c0 .568.224 1.113.622 1.515l8.249 8.34-8.25 8.34a2.16 2.16 0 0 0-.548 2.07c.196.74.768 1.317 1.499 1.515a2.104 2.104 0 0 0 2.048-.555l9.758-9.866a2.153 2.153 0 0 0 0-3.03L8.62.61C7.812-.207 6.45-.207 5.622.63z"></path>
+                </svg>
+            </div>
+            <p class="t-anime_subheadtitle">Top Animes According to Me</p> 
+
+            <div class="anime-list">
+
+                <div class="list-div">
+
+                    <img src="./assets/images/jjk.jpg" alt="image" class="list_image">
+
+                    <p class="list_title">Jujutsu Kaisen</p>
+
+                    <button class="watch_option">Watch options</button>
+
+                    <div class="below_watch-option">
+
+                        <div class="trailer">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                                </svg>
+                            </a>
+                            <span>Trailer</span>
+                        </div>
+                        <div class="About-show">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                            </svg>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                <div class="list-div">
+
+                    <img src="./assets/images/AttackonTitan.jpg" alt="image" class="list_image">
+
+                    <p class="list_title">Attack on Titan</p>
+
+                    <button class="watch_option">Watch options</button>
+
+                    <div class="below_watch-option">
+
+                        <div class="trailer">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                                </svg>
+                            </a>
+                            <span>Trailer</span>
+                        </div>
+
+                        <div class="About-show">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                            </svg>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="list-div">
+
+                    <img src="./assets/images/TowerOfGod.jpg" alt="image" class="list_image">
+
+                    <p class="list_title">Tower of God</p>
+
+                    <button class="watch_option">Watch options</button>
+
+                    <div class="below_watch-option">
+                        <div class="trailer">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                                </svg>
+                            </a>
+                            <span>Trailer</span>
+                        </div>
+
+                        <div class="About-show">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                            </svg>
+                        </div>
+
+                    </div>  
+
+                </div>
+
+                <div class="list-div">
+                    <img src="./assets/images/Fruitsbasket.jpg" alt="image" class="list_image">
+
+                   <p class="list_title">Fruits Basket</p>
+
+                    <button class="watch_option">Watch options</button>
+
+                    <div class="below_watch-option">
+                        <div class="trailer">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                                </svg>
+                            </a>
+                            <span>Trailer</span>
+                        </div>
+    
+                        <div class="About-show">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <div class="list-div">
+
+                    <img src="./assets/images/Onepiece.jpg" alt="image" class="list_image">
+
+                    <p class="list_title">One Piece</p>
+
+                    <button class="watch_option">Watch options</button>
+
+                    <div class="below_watch-option">
+
+                        <div class="trailer">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                                </svg>
+                            </a>
+                            <span>Trailer</span>
+                        </div>
+
+                        <div class="About-show">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                            </svg>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="list-div">
+
+                    <img src="./assets/images/Cote.jpg" alt="image" class="list_image">
+
+                    <p class="list_title">Classroom of The Elite</p>
+
+                    <button class="watch_option">Watch options</button>
+
+                    <div class="below_watch-option">
+                        <div class="trailer">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                                </svg>
+                            </a>
+                            <span>Trailer</span>
+                        </div>
+
+                        <div class="About-show">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                            </svg>
+                        </div>
+
+                    </div>
+                   
+                </div>
+
+                <div class="left-animelist-btn btun">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--chevron-left-inline ipc-icon--inline ipc-pager-icon left-btn_svg" viewBox="0 0 24 24" fill="currentColor" role="presentation">
+                        <path d="M18.378 23.369c.398-.402.622-.947.622-1.516 0-.568-.224-1.113-.622-1.515l-8.249-8.34 8.25-8.34a2.16 2.16 0 0 0 .548-2.07A2.132 2.132 0 0 0 17.428.073a2.104 2.104 0 0 0-2.048.555l-9.758 9.866A2.153 2.153 0 0 0 5 12.009c0 .568.224 1.114.622 1.515l9.758 9.866c.808.817 2.17.817 2.998-.021z"></path>
+                    </svg>
+                </div>
+
+                <div class="right-animelist-btn btun">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--chevron-right-inline ipc-icon--inline ipc-pager-icon right-btn_svg" viewBox="0 0 24 24" fill="currentColor" role="presentation">
+                        <path d="M5.622.631A2.153 2.153 0 0 0 5 2.147c0 .568.224 1.113.622 1.515l8.249 8.34-8.25 8.34a2.16 2.16 0 0 0-.548 2.07c.196.74.768 1.317 1.499 1.515a2.104 2.104 0 0 0 2.048-.555l9.758-9.866a2.153 2.153 0 0 0 0-3.03L8.62.61C7.812-.207 6.45-.207 5.622.63z"></path>
+                    </svg>
+                </div>
+                
+            </div>   
+        </div>
+    </main>
+
+</body>
+</html>
