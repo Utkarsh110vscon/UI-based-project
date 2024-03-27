@@ -1,6 +1,6 @@
 # UI-based-project
 
-#About The Project
+# About The Project: 
 Modern UI Experience is a cutting-edge web interface designed to showcase the power of HTML and CSS combined with interactive elements to create a seamless and engaging user experience. This project is based on IMDB with my own customization.
 
 
